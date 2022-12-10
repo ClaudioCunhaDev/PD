@@ -1,10 +1,12 @@
 import React from "react";
-import vasili from "../assets/Vasili.svg";
-import warning from "../assets/warning_amber.svg";
 import Announcement from "./share/announcementDiv/Announcement";
 import ArrowRight from "./share/arrows/Arrow_left";
 import ArrowLeft from "./share/arrows/Arrow_right";
 import SearchBar from "./share/search/SearchBar";
+import Warrants from "./share/warrants/Warrants";
+import Warning from "./share/warning/Warning";
+import vasili from "../assets/Vasili.svg";
+import warningIMG from "../assets/warning_amber.svg";
 
 const Announcements = () => {
   return (
@@ -15,38 +17,38 @@ const Announcements = () => {
         <ArrowLeft />
       </div>
       <div className="flex gap-5">
-        <Announcement />
-        <Announcement />
+        <Announcement
+          title="ANNOUNCEMENT NAME"
+          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in electronic typesetting, remaining essentially"
+          date="12.11.22"
+          hour="19:40"
+          time="2 HOURS AGO"
+        />
+        <Announcement
+          title="ANNOUNCEMENT NAME"
+          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in electronic typesetting, remaining essentially"
+          date="12.11.22"
+          hour="19:40"
+          time="2 HOURS AGO"
+        />
       </div>
       <div className="flex w-full gap-5">
         <div className="flex flex-col gap-3">
           <div className="w-full">
-            <h1 className="mt-5 font-bold">WARRATS</h1>
+            <h1 className="mt-5 font-bold">WARRANTS</h1>
           </div>
           <SearchBar />
           <div className="overflow-y-auto max-h-[130px]">
-            <div className="flex bg-black rounded gap-3">
-              <img className="ml-2 " src={vasili} alt="" />
-              <div className="text-sm mt-5">
-                <h1 className="">VASILI HUSAK</h1>
-                <hr />
-                <p className="mt-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-            <div className="flex bg-black rounded gap-3">
-              <img className="ml-2 " src={vasili} alt="" />
-              <div className="text-sm mt-5">
-                <h1 className="">VASILI HUSAK</h1>
-                <hr />
-                <p className="mt-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
+            <Warrants
+              name="VASILI   HUSAK"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+              image={vasili}
+            />
+            <Warrants
+              name="VASILI   HUSAK"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+              image={vasili}
+            />
           </div>
         </div>
         <div className="flex flex-col gap-3">
@@ -55,32 +57,16 @@ const Announcements = () => {
           </div>
           <SearchBar />
           <div className="overflow-y-auto max-h-[130px]">
-            <div className="flex bg-black rounded gap-3 justify-center items-center">
-              <div className="h-[70px] w-[80%] flex justify-center items-center bg-[#FFC061] rounded ml-3">
-                <img className="" src={warning} alt="" />
-              </div>
-              <div className="text-sm mt-5">
-                <h1>DRUG TRAFFICKING'S</h1>
-                <hr />
-                <p className="mt-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-            <div className="flex bg-black rounded justify-center items-center gap-3">
-              <div className="h-[70px] w-[80%] flex justify-center items-center bg-[#FFC061] rounded ml-3">
-                <img className="" src={warning} alt="" />
-              </div>
-              <div className="text-sm mt-5">
-                <h1 className="">MISSING PERSON</h1>
-                <hr />
-                <p className="mt-3">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
+            <Warning
+              name="DRUG TRAFFICKING'S"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+              image={warningIMG}
+            />
+            <Warning
+              name="MISSING PERSON"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+              image={warningIMG}
+            />
           </div>
         </div>
       </div>
