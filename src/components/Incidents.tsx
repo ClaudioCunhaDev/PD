@@ -15,12 +15,16 @@ const Incidents = () => {
             <h1>54 RESULT</h1>
           </div>
         </div>
-        <div className="w-[32.5%] mb-2">
+        <div className="w-[32.5%]">
           <SearchBar />
         </div>
       </div>
-
-      <div className="flex gap-3 h-[60vh] overflow-auto">
+      <div className="flex gap-3">
+        <h1>TEXT</h1>
+        <h1>TEXT</h1>
+        <h1>TEXT</h1>
+      </div>
+      <div className="flex gap-3 h-[60vh] overflow-auto pt-3">
         <div className="flex flex-col gap-3">
           <Warning
             name="MISSING PERSON"

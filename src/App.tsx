@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import { debugData } from "./utils/debugData";
 import { useNavigationState } from "./atoms/navigationAtom";
 import Incidents from "./components/Incidents";
+import Profiles from "./components/Profiles";
 
 // This will set the NUI to visible if we are
 // developing in browser
@@ -23,6 +24,8 @@ function App() {
         return <Home />;
       case "incidents":
         return <Incidents />;
+      case "profiles":
+        return <Profiles />;
       default:
         return <Home />;
     }
@@ -36,9 +39,7 @@ function App() {
           <div className="col-span-2">
             <Menu />
           </div>
-          <div className="col-span-10">
-            {renderPage()}        
-          </div>
+          <div className="col-span-10">{renderPage()}</div>
         </div>
       </div>
     </div>

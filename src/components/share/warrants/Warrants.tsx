@@ -13,12 +13,12 @@ const WarrantsItem: React.FC<IWarrantsItemProps> = ({
 }) => {
   return (
     <>
-      <div className="flex bg-black rounded gap-3">
-        <img className="ml-2" src={image} alt="" />
-        <div className="text-sm mt-5">
+      <div className="flex bg-black rounded gap-3 pl-3 items-center">
+        <img className="" src={image} alt="" />
+        <div className="text-sm pt-3">
           <h1 className="">{name}</h1>
           <hr />
-          <p className="mt-3">{description}</p>
+          <p className="pt-1">{description}</p>
         </div>
       </div>
     </>

@@ -33,7 +33,12 @@ const Menu = () => {
             <img src={pan_tool}></img>
             <h2>INCIDENTS</h2>
           </div>
-          <div className="flex gap-5">
+          <div
+            className="flex gap-5 cursor-pointer"
+            onClick={() => {
+              setNavigationState({ path: "profiles" });
+            }}
+          >
             <img src={face}></img>
             <h2>PROFILES</h2>
           </div>
