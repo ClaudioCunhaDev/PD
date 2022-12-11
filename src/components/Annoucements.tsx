@@ -40,12 +40,12 @@ const Announcements = () => {
           <SearchBar />
           <div className="overflow-y-auto max-h-[130px]">
             <Warrants
-              name="VASILI   HUSAK"
+              name="VASILI HUSAK"
               description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
               image={vasili}
             />
             <Warrants
-              name="VASILI   HUSAK"
+              name="VASILI HUSAK"
               description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
               image={vasili}
             />

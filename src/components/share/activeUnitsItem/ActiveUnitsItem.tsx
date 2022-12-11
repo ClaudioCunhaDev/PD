@@ -14,8 +14,8 @@ const ActiveUnitItem: React.FC<IActivateUnitItemProps> = ({
   value,
 }) => {
   return (
-    <>
-      <div className="h-[45px] w-full border-2 rounded-lg bg-black flex justify-between items-center">
+    <div>
+      <div className="h-[48px] w-full border-2 rounded-lg bg-black flex justify-between items-center">
         <div className="ml-3 h-[50%] w-[15%] bg-blue-500 flex justify-center items-center rounded-lg text-xs">
           {branch}
         </div>
@@ -29,7 +29,7 @@ const ActiveUnitItem: React.FC<IActivateUnitItemProps> = ({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
