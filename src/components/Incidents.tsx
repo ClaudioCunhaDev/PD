@@ -2,6 +2,8 @@ import React from "react";
 import Warning from "./share/warning/Warning";
 import feedBack from "../assets/feedback.svg";
 import SearchBar from "./share/search/SearchBar";
+import ArrowLeft from "./share/arrows/Arrow_right";
+import ArrowRight from "./share/arrows/Arrow_left";
 
 const Incidents = () => {
   return (
@@ -13,37 +15,12 @@ const Incidents = () => {
             <h1>54 RESULT</h1>
           </div>
         </div>
-        <div className="w-[32.5%] mb-2"><SearchBar/></div>
+        <div className="w-[32.5%] mb-2">
+          <SearchBar />
+        </div>
       </div>
-      
+
       <div className="flex gap-3 h-[60vh] overflow-auto">
-      <div className="flex flex-col gap-3">
-          <Warning
-            name="MISSING PERSON"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-            image={feedBack}
-          />
-          <Warning
-            name="MISSING PERSON"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-            image={feedBack}
-          />
-          <Warning
-            name="MISSING PERSON"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-            image={feedBack}
-          />
-          <Warning
-            name="MISSING PERSON"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-            image={feedBack}
-          />
-          <Warning
-            name="MISSING PERSON"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-            image={feedBack}
-          />
-        </div>
         <div className="flex flex-col gap-3">
           <Warning
             name="MISSING PERSON"
@@ -98,6 +75,38 @@ const Incidents = () => {
             image={feedBack}
           />
         </div>
+        <div className="flex flex-col gap-3">
+          <Warning
+            name="MISSING PERSON"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image={feedBack}
+          />
+          <Warning
+            name="MISSING PERSON"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image={feedBack}
+          />
+          <Warning
+            name="MISSING PERSON"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image={feedBack}
+          />
+          <Warning
+            name="MISSING PERSON"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image={feedBack}
+          />
+          <Warning
+            name="MISSING PERSON"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image={feedBack}
+          />
+        </div>
+      </div>
+      <div className="flex justify-center pt-5">
+        <ArrowRight />
+        <h1 className="px-5">1/5</h1>
+        <ArrowLeft />
       </div>
     </div>
   );

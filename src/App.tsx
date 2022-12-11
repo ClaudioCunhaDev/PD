@@ -36,7 +36,9 @@ function App() {
           <div className="col-span-2">
             <Menu />
           </div>
-          <div className="col-span-10">{renderPage()}</div>
+          <div className="col-span-10">
+            {renderPage()}        
+          </div>
         </div>
       </div>
     </div>
