@@ -6,6 +6,7 @@ import { debugData } from "./utils/debugData";
 import { useNavigationState } from "./atoms/navigationAtom";
 import Incidents from "./components/Incidents";
 import Profiles from "./components/Profiles";
+import Incidents2 from "./components/Incidents2";
 
 // This will set the NUI to visible if we are
 // developing in browser
@@ -24,6 +25,8 @@ function App() {
         return <Home />;
       case "incidents":
         return <Incidents />;
+      case "incidents2":
+        return <Incidents2 />;
       case "profiles":
         return <Profiles />;
       default:

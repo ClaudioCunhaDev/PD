@@ -1,7 +1,7 @@
 import React from "react";
 import Announcement from "./share/announcementDiv/Announcement";
-import ArrowRight from "./share/arrows/Arrow_left";
-import ArrowLeft from "./share/arrows/Arrow_right";
+import ArrowRight from "./share/arrows/Arrow_right";
+import ArrowLeft from "./share/arrows/Arrow_left";
 import SearchBar from "./share/search/SearchBar";
 import Warrants from "./share/warrants/Warrants";
 import Warning from "./share/warning/Warning";
@@ -13,8 +13,8 @@ const Announcements = () => {
     <div className="h-full">
       <div className="flex items-center pt-3">
         <h2 className="font-bold mb-3 mr-3">ANNOUNCEMENTS</h2>
-        <ArrowRight />
         <ArrowLeft />
+        <ArrowRight />
       </div>
       <div className="flex gap-5">
         <Announcement
