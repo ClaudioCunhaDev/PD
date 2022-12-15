@@ -32,41 +32,46 @@ const Announcements = () => {
           time="2 HOURS AGO"
         />
       </div>
-      <div className="flex w-full gap-5">
-        <div className="flex flex-col gap-3">
-          <div className="w-full">
-            <h1 className="mt-5 font-bold">WARRANTS</h1>
-          </div>
-          <SearchBar />
-          <div className="overflow-y-auto max-h-[130px]">
-            <Warrants
-              name="VASILI HUSAK"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-              image={vasili}
-            />
-            <Warrants
-              name="VASILI HUSAK"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-              image={vasili}
-            />
+      <div className="flex w-[100%] gap-5">
+        <div className="w-[50%]">
+          <div className="flex flex-col gap-3">
+            <div className="">
+              <h1 className="pt-5 font-bold">WARRANTS</h1>
+            </div>
+            <SearchBar />
+            <div className="overflow-y-auto max-h-[130px]">
+              <Warrants
+                name="VASILI HUSAK"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+              <Warrants
+                name="VASILI HUSAK"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-3">
-          <div className="w-full">
-            <h1 className="mt-5 font-bold ml-3">REPORTS</h1>
-          </div>
-          <SearchBar />
-          <div className="overflow-y-auto max-h-[130px]">
-            <Warning
-              name="DRUG TRAFFICKING'S"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-              image={warningIMG}
-            />
-            <Warning
-              name="MISSING PERSON"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-              image={warningIMG}
-            />
+        <div className="w-[50%]">
+          <div className="flex flex-col gap-3">
+            <div className="">
+              <h1 className="pt-5 font-bold">WARRANTS</h1>
+            </div>
+            <SearchBar />
+            <div className="overflow-y-auto max-h-[130px]">
+              <Warning
+                name="MISSING PERSON"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={warningIMG}
+              />
+
+              <Warning
+                name="MISSING PERSON"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={warningIMG}
+              />
+            </div>
           </div>
         </div>
       </div>

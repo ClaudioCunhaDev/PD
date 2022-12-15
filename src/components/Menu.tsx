@@ -42,11 +42,21 @@ const Menu = () => {
             <img src={face}></img>
             <h2>PROFILES</h2>
           </div>
-          <div className="flex gap-4">
+          <div
+            className="flex gap-4 cursor-pointer"
+            onClick={() => {
+              setNavigationState({ path: "reports" });
+            }}
+          >
             <img src={record_voice_over}></img>
             <h2>REPORTS</h2>
           </div>
-          <div className="flex gap-5">
+          <div
+            className="flex gap-5 cursor-pointer"
+            onClick={() => {
+              setNavigationState({ path: "evidence" });
+            }}
+          >
             <img src={launch}></img>
             <h2>EVIDENCE</h2>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Warning from "./share/warning/Warning";
 import feedBack from "../assets/feedback.svg";
 import SearchBar from "./share/search/SearchBar";
@@ -10,7 +10,7 @@ const Incidents = () => {
   const [navigationState, setNavigationState] = useNavigationState();
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full pb-2">
       <div className="flex justify-between items-center">
         <div className="flex gap-3 text-xl">
           <h1>SEARCH RESULT</h1>
@@ -29,7 +29,7 @@ const Incidents = () => {
       </div>
       <div className="flex gap-3 h-[60vh] overflow-auto pt-3">
         <div
-          className="flex flex-col gap-3 cursor-pointer"
+          className="flex flex-col gap-3"
           onClick={() => {
             setNavigationState({ path: "incidents2" });
           }}
@@ -60,7 +60,12 @@ const Incidents = () => {
             image={feedBack}
           />
         </div>
-        <div className="flex flex-col gap-3 cursor-pointer">
+        <div
+          className="flex flex-col gap-3 cursor-pointer"
+          onClick={() => {
+            setNavigationState({ path: "incidents2" });
+          }}
+        >
           <Warning
             name="MISSING PERSON"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
@@ -87,7 +92,12 @@ const Incidents = () => {
             image={feedBack}
           />
         </div>
-        <div className="flex flex-col gap-3 cursor-pointer">
+        <div
+          className="flex flex-col gap-3 cursor-pointer pr-5"
+          onClick={() => {
+            setNavigationState({ path: "incidents2" });
+          }}
+        >
           <Warning
             name="MISSING PERSON"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"

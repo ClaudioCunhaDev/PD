@@ -4,7 +4,7 @@ import ellipse from "../assets/Ellipse 58.svg";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center pl-5 mb-2">
+    <div className="flex justify-between items-center pl-5 mb-2 flex-wrap">
       <div className="flex items-center">
         <img src={sealOfTheLosAngeles} className="mr-3 h-[42px]"></img>
         <h1 className="w-[500px] text-2xl font-bold">
