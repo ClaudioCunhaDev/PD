@@ -67,15 +67,13 @@ const Evidence2 = () => {
                 </div>
               </div>
               <div className="h-[50%] flex w-[60%] justify-between px-3">
-                <div>
+                <div className="">
                   <p className="text-sm">FIRST NAME</p>
-                  <h1 className="font-bold text-2xl">VASILI</h1>
-                  <hr></hr>
+                  <h1 className="font-bold text-2xl border-b border-b-white">VASILI</h1>
                 </div>
                 <div>
                   <h1 className="text-sm">LAST NAME</h1>
-                  <h1 className="font-bold text-2xl">HUSAK</h1>
-                  <hr></hr>
+                  <h1 className="font-bold text-2xl border-b border-b-white">HUSAK</h1>
                 </div>
               </div>
             </div>
@@ -89,8 +87,7 @@ const Evidence2 = () => {
                 <div className="h-[50%] flex w-[100%] justify-between px-3">
                   <div>
                     <p className="text-sm">ERROR</p>
-                    <h1 className="font-bold text-2xl">DATA NOT FOUND</h1>
-                    <hr></hr>
+                    <h1 className="font-bold text-2xl border-b border-b-white">DATA NOT FOUND</h1>
                   </div>
                 </div>
               </div>
@@ -103,8 +100,7 @@ const Evidence2 = () => {
                 <div className="h-[50%] flex w-[100%] justify-between px-3">
                   <div>
                     <p className="text-sm">ERROR</p>
-                    <h1 className="font-bold text-2xl">DATA NOT FOUND</h1>
-                    <hr></hr>
+                    <h1 className="font-bold text-2xl border-b border-b-white">DATA NOT FOUND</h1>
                   </div>
                 </div>
               </div>
@@ -119,8 +115,7 @@ const Evidence2 = () => {
                 <div className="h-[50%] flex w-[100%] justify-between px-3">
                   <div>
                     <p className="text-sm">ERROR</p>
-                    <h1 className="font-bold text-2xl">DATA NOT FOUND</h1>
-                    <hr></hr>
+                    <h1 className="font-bold text-2xl border-b border-b-white">DATA NOT FOUND</h1>
                   </div>
                 </div>
               </div>
@@ -133,8 +128,7 @@ const Evidence2 = () => {
                 <div className="h-[50%] flex w-[100%] justify-between px-3">
                   <div>
                     <p className="text-sm">ERROR</p>
-                    <h1 className="font-bold text-2xl">DATA NOT FOUND</h1>
-                    <hr></hr>
+                    <h1 className="font-bold text-2xl border-b border-b-white">DATA NOT FOUND</h1>
                   </div>
                 </div>
               </div>

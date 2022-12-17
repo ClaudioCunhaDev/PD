@@ -10,13 +10,13 @@ import warningIMG from "../assets/warning_amber.svg";
 
 const Announcements = () => {
   return (
-    <div className="h-full">
+    <div className="h-full w-full ">
       <div className="flex items-center pt-3">
         <h2 className="font-bold mb-3 mr-3">ANNOUNCEMENTS</h2>
         <ArrowLeft />
         <ArrowRight />
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-3">
         <Announcement
           title="ANNOUNCEMENT NAME"
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in electronic typesetting, remaining essentially"
@@ -39,7 +39,7 @@ const Announcements = () => {
               <h1 className="pt-5 font-bold">WARRANTS</h1>
             </div>
             <SearchBar />
-            <div className="overflow-y-auto max-h-[130px]">
+            <div className="flex flex-col gap-3 overflow-y-auto max-h-[143px]">
               <Warrants
                 name="VASILI HUSAK"
                 description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
@@ -59,7 +59,7 @@ const Announcements = () => {
               <h1 className="pt-5 font-bold">WARRANTS</h1>
             </div>
             <SearchBar />
-            <div className="overflow-y-auto max-h-[130px]">
+            <div className="flex flex-col gap-3 overflow-y-auto max-h-[143px]">
               <Warning
                 name="MISSING PERSON"
                 description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"

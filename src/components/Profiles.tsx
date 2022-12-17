@@ -13,40 +13,49 @@ const Profiles = () => {
     <div className="w-full h-full">
       <div className="grid-cols-10 grid gap-3 h-[79vh] overflow-auto pt-3">
         <div className="grid gap-3 col-span-3">
-          <div className="flex flex-col gap-1">
-            <h1>PROFILES</h1>
-            <SearchBar />
+        <div className="grid col-span-2">
+          <div className="flex flex-col gap-3">
+            <div className="">
+              <h1 className="text-lg font-bold">STAFF</h1>
+            </div>
+            <div>
+              <SearchBar />
+            </div>
+            <div
+              className="flex flex-col gap-3"
+              onClick={() => {
+                setNavigationState({ path: "profiles2" });
+              
+              }}
+            >
+              <Warrants
+                name="DRUG TRAFFICKING'S"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+              <Warrants
+                name="DRUG TRAFFICKING'S"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+              <Warrants
+                name="DRUG TRAFFICKING'S"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+              <Warrants
+                name="DRUG TRAFFICKING'S"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+              <Warrants
+                name="DRUG TRAFFICKING'S"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+                image={vasili}
+              />
+            </div>
           </div>
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
-          <Warrants
-            name="VASILI HUSAK"
-            description="ID: 2423523"
-            image={vasili}
-          />
+        </div>
         </div>
         <div className="grid gap-3 col-span-5">
           <div className="flex flex-col gap-3">

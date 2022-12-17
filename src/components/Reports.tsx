@@ -51,17 +51,15 @@ const Reports = () => {
             <div className="h-[100%] flex flex-col gap-5">
               <div className="bg-black rounded-lg h-[60%] p-3">
                 <div className="h-[30%] flex justify-between items-center p-5">
-                  <div className="">
+                  <div className="border-b border-b-white">
                     <div className="">
                       <h1 className="text-md">TITLE</h1>
                       <h1 className="text-xl font-bold">MISSING SUBJECT</h1>
                     </div>
-                    <hr />
                   </div>
-                  <div className="">
+                  <div className="border-b border-b-white">
                     <h1 className="text-md">INCIDENT ID</h1>
                     <h1 className="text-xl font-bold"># 35345</h1>
-                    <hr />
                   </div>
                 </div>
                 <div className="h-[70%] flex flex-col gap-3 px-5 ">

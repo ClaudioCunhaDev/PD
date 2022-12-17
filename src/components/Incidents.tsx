@@ -10,7 +10,7 @@ const Incidents = () => {
   const [navigationState, setNavigationState] = useNavigationState();
 
   return (
-    <div className="w-full h-full pb-2">
+    <div className="w-full h-full">
       <div className="flex justify-between items-center">
         <div className="flex gap-3 text-xl">
           <h1>SEARCH RESULT</h1>

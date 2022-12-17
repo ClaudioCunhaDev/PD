@@ -8,6 +8,9 @@ import deleteImg from "../assets/deleteImg.svg";
 import editImg from "../assets/editImg.svg";
 import vasili from "../assets/Vasili.svg";
 import { useModalState } from "../atoms/modalState";
+import InvolmentItem from "./share/involmentItem/InvolmentItem";
+import InvolmentItemNoEdit from "./share/involmentItem/InvolmentItemNoEdit";
+import IncidenceItem from "./share/incidenceItem/IncidenceItem";
 
 const Incidents2 = () => {
   const [showModal, setShowModal] = useModalState();
@@ -113,132 +116,25 @@ const Incidents2 = () => {
           </div>
           <div className="flex gap-3">
             <div className="w-[55%] flex flex-col gap-3">
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center">
-                  <div className="flex justify-between items-center gap-2">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <img className="cursor-pointer" src={deleteImg} alt="" />
-                </div>
-              </div>
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center gap-2">
-                  <div className="flex justify-between items-center gap-3">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <div className="flex gap-1">
-                    <img className="cursor-pointer" src={editImg} alt="" />
-                    <img className="cursor-pointer" src={deleteImg} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center gap-2">
-                  <div className="flex justify-between items-center gap-3">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <div className="flex gap-1">
-                    <img className="cursor-pointer" src={editImg} alt="" />
-                    <img className="cursor-pointer" src={deleteImg} alt="" />
-                  </div>
-                </div>
-              </div>
+              <InvolmentItemNoEdit />
+              <InvolmentItem />
+              <InvolmentItem />
             </div>
 
             <div className="w-[55%] flex flex-col gap-3">
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center gap-2">
-                  <div className="flex justify-between items-center gap-3">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <div className="flex gap-1">
-                    <img className="cursor-pointer" src={editImg} alt="" />
-                    <img className="cursor-pointer" src={deleteImg} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center gap-2">
-                  <div className="flex justify-between items-center gap-3">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <div className="flex gap-1">
-                    <img className="cursor-pointer" src={editImg} alt="" />
-                    <img className="cursor-pointer" src={deleteImg} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="bg-black p-3 rounded-lg">
-                <div className="flex justify-between items-center gap-2">
-                  <div className="flex justify-between items-center gap-3">
-                    <img className="h-[60px]" src={vasili} alt="" />
-                    <h1 className="text-sm">VASILI HUSAK</h1>
-                  </div>
-                  <div className="flex gap-1">
-                    <img className="cursor-pointer" src={editImg} alt="" />
-                    <img className="cursor-pointer" src={deleteImg} alt="" />
-                  </div>
-                </div>
-              </div>
+              <InvolmentItem />
+              <InvolmentItem />
+              <InvolmentItem />
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-3 col-span-1 w-[100%]">
           <h1 className="font-bold text-xl">INCIDENCE</h1>
-          <div className="bg-black rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
-            <div className="flex gap-2 items-center">
-              <div className="h-9 w-9 bg-amber-800">
-                <img className="p-2" src={feedBack} alt="" />
-              </div>
-              <h1 className="text-md font-bold">#4322</h1>
-            </div>
-            <div className="flex gap-2 p-2">
-              <img className="cursor-pointer" src={editImg} alt="" />
-              <img className="cursor-pointer" src={deleteImg} alt="" />
-            </div>
-          </div>
-          <div className="bg-black rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
-            <div className="flex gap-2 items-center">
-              <div className="h-9 w-9 bg-amber-800">
-                <img className="p-2" src={feedBack} alt="" />
-              </div>
-              <h1 className="text-md font-bold">#4322</h1>
-            </div>
-            <div className="flex gap-2 p-2">
-              <img className="cursor-pointer" src={editImg} alt="" />
-              <img className="cursor-pointer" src={deleteImg} alt="" />
-            </div>
-          </div>
-          <div className="bg-black rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
-            <div className="flex gap-2 items-center ">
-              <div className="h-9 w-9 bg-amber-800">
-                <img className="p-2" src={feedBack} alt="" />
-              </div>
-              <h1 className="text-md font-bold">#4322</h1>
-            </div>
-            <div className="flex gap-2 p-2">
-              <img className="cursor-pointer" src={editImg} alt="" />
-              <img className="cursor-pointer" src={deleteImg} alt="" />
-            </div>
-          </div>
-          <div className="bg-black rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
-            <div className="flex gap-2 items-center">
-              <div className="h-9 w-9 bg-amber-800">
-                <img className="p-2" src={feedBack} alt="" />
-              </div>
-              <h1 className="text-md font-bold">#4322</h1>
-            </div>
-            <div className="flex gap-2 p-2">
-              <img className="cursor-pointer" src={editImg} alt="" />
-              <img className="cursor-pointer" src={deleteImg} alt="" />
-            </div>
-          </div>
-          <div className="mb-11 bg-black rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
+          <IncidenceItem />
+          <IncidenceItem />
+          <IncidenceItem />
+          <IncidenceItem />
+          <div className="mb-11 bg-[#0D0F14] rounded-lg flex p-2 gap-2 h-[60px] items-center justify-between">
             <div className="flex gap-2 items-center">
               <div className="h-9 w-9 bg-amber-800">
                 <img className="p-2" src={feedBack} alt="" />
@@ -256,42 +152,9 @@ const Incidents2 = () => {
               <h1>SPECTATORS </h1>
               <h1 className="cursor-pointer text-2xl ">+</h1>
             </div>
-            <div className="bg-black p-3 rounded-lg">
-              <div className="flex justify-between items-center gap-2">
-                <div className="flex justify-between items-center gap-3">
-                  <img className="h-[60px]" src={vasili} alt="" />
-                  <h1 className="text-sm">VASILI HUSAK</h1>
-                </div>
-                <div className="flex gap-1">
-                  <img className="cursor-pointer" src={editImg} alt="" />
-                  <img className="cursor-pointer" src={deleteImg} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="bg-black p-3 rounded-lg">
-              <div className="flex justify-between items-center gap-2">
-                <div className="flex justify-between items-center gap-3">
-                  <img className="h-[60px]" src={vasili} alt="" />
-                  <h1 className="text-sm">VASILI HUSAK</h1>
-                </div>
-                <div className="flex gap-1">
-                  <img className="cursor-pointer" src={editImg} alt="" />
-                  <img className="cursor-pointer" src={deleteImg} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="bg-black p-3 rounded-lg">
-              <div className="flex justify-between items-center gap-2">
-                <div className="flex justify-between items-center gap-3">
-                  <img className="h-[60px]" src={vasili} alt="" />
-                  <h1 className="text-sm">VASILI HUSAK</h1>
-                </div>
-                <div className="flex gap-1">
-                  <img className="cursor-pointer" src={editImg} alt="" />
-                  <img className="cursor-pointer" src={deleteImg} alt="" />
-                </div>
-              </div>
-            </div>
+            <InvolmentItem/>
+            <InvolmentItem/>
+            <InvolmentItem/>
           </div>
         </div>
       </div>

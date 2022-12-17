@@ -3,7 +3,7 @@ import ActiveUnitItem from "./share/activeUnitsItem/ActiveUnitsItem";
 
 const ActiveUnits = () => {
   return (
-    <div className="flex flex-col gap-3 p-5 pt-3 overflow-y-auto h-[564px]">
+    <div className="flex flex-col gap-3 p-5 pt-3 overflow-y-auto max-h-[564px]">
       <h1 className="font-bold mb-3">ACTIVE UNITS</h1>
         <ActiveUnitItem
           name="VASILI HUSAK"

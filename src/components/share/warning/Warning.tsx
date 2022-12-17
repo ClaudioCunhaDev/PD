@@ -13,8 +13,7 @@ const Warning: React.FC<IWarningItemProps> = ({ name, description, image }) => {
         <img className="" src={image} alt="" />
       </div>
       <div className="text-sm pt-4">
-        <h1 className="">{name}</h1>
-        <hr />
+        <h1 className="border-b border-b-white">{name}</h1>
         <p className="mt-3">{description}</p>
       </div>
     </div>
